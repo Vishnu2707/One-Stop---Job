@@ -1,38 +1,84 @@
+/* General styling */
 .App {
   text-align: center;
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa; /* Light grey background */
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Navigation bar styling */
+.navbar {
+  background-color: #007bff; /* Blue background */
   color: white;
+  padding: 10px;
+  text-align: left;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Container styling */
+.container {
+  margin-top: 20px;
+}
+
+/* Search box styling */
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.search-button {
+  padding: 10px 20px;
+  background-color: #28a745; /* Green button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search-button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Card styling */
+.card {
+  background-color: white;
+  padding: 30px; /* Increased padding for more space inside the card */
+  border-radius: 15px; /* Increased radius for more rounded corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly larger shadow for more depth */
+  max-width: 1100px; /* Increased max-width for a larger card */
+  margin: 20px auto; /* Center align with top and bottom margins */
+}
+
+/* Job table styling */
+.job-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.job-table th, .job-table td {
+  padding: 20px; /* Increased padding for table cells for a better visual look */
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.job-table th {
+  background-color: #f2f2f2;
+}
+
+.job-table tr:hover {
+  background-color: #f1f1f1; /* Highlight on hover */
 }
